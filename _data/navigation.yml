@@ -3,6 +3,8 @@ main:
     url: /posts/
   - title: "Categories"
     url: /categories/
+- title: "Penenang Hati"
+    url: /soother/
   - title: "Tags"
     url: /tags/
   - title: "About"
