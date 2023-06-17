@@ -8,7 +8,10 @@ tags:
   - update
 ---
 
-Di sini Anda akan menemukan beberapa catatan baik yang absurd maupun yang make sense. Jadi harap bersabar karena satu-satunya kepastian dalam dunia ini adalah perubahan. Siapa tau mindset Anda pun ikut berubah menjadi lebih baik setelah membaca catatan ini. Ayahku selalu berkata, bahwa perhatikan semua tanda You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Di sini Anda akan menemukan beberapa catatan baik yang absurd maupun yang make sense. Jadi harap bersabar karena satu-satunya kepastian dalam dunia ini adalah perubahan. Siapa tau mindset Anda pun ikut berubah menjadi lebih baik setelah membaca catatan ini. Ayahku selalu berkata, bahwa perhatikan semua tanda yang .
+
+
+ You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
