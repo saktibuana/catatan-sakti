@@ -4,9 +4,13 @@ last_modified_at: 2023-7-09T08:20:02-05:00
 categories:
   - Blog
   - Git
+  - Catatan
 tags:
   - software enginner
   - produktifitas
+  - sistem
+  - kerja
+  - tanggung-jawab
 ---
 
 Para Software Engineer diharapkan untuk mengerjakan pekerjaan dengan super cepat dalam dunia development yang berkembang pesat ini.
@@ -17,24 +21,28 @@ Salah satu cara memproduksi kerjaan yang konsisten adalah dengan membuat sebuah 
 
 Lalu? Ulangi.
 
+Dalam banyak pekerjaan, kita sering terjebak pada satu anggapan: selama orangnya cakap dan niatnya baik, urusan akan beres dengan sendirinya.
+
+Pengalaman justru mengajarkan hal yang berbeda.
+
+Banyak kekacauan lahir bukan karena kurangnya kemampuan, tetapi karena **tidak adanya sistem yang jelas**.
+
 <!--more-->
-Hampir semua proyek yang kita telah buat ada file `.gitignore`. ini sebenarnya berisi nama-nama file yang akan diabaikan oleh proses-proses Git sehingga tidak akan terlacak oleh Git. Hanya saja, jika kita terlambat menyertakan file `.gitignore` ini atau mungkin kita ingin memperbarui file `.gitignore` agar bisa menghapus file tertentu dari repository, terkadang Git tidak langsung me-refleksikannya, Gimana dong? Kita harus menerapkan `.gitignore` itu lagi.
 
-Dalam artikel kali ini, akan ditunjukkan bagaimana caranya menerapkan `.gitignore` lagi dalam repository proyek kita - maka pastikan setiap perubahan diterapkan ya!
+Ketika sebuah pekerjaan hanya bergantung pada individu, hasilnya akan sangat bergantung pada kondisi orang tersebut. Saat ia sehat, fokus, dan lapang waktunya, semuanya berjalan lancar. Namun ketika ia lelah, tergesa, atau tergantikan, pekerjaan mulai goyah.
 
-## Menghapus semua file dari Git index
+Di situlah sistem mengambil peran.
 
-Git menyimpan masing-masing status dari file-file kita dalam sebuah index. Setiap file yang kita kecualikan dengan menuliskan file tersebut pada file `.gitignore`, tidak akan ditambahkan kedalam index tersebut. Namun bagaimana jika file tersebut sudah ada terlebih dulu dalam index? Agar bisa menerapkan aturan `.gitignore` maka kita harus menghapus dulu index tersebut lalu mengisinya lagi.
+Sistem bukan untuk membatasi manusia, tetapi untuk **menjaga amanah tetap berjalan** meskipun kondisi tidak ideal. Ia memastikan bahwa pekerjaan tidak berhenti hanya karena satu orang absen, lupa, atau salah langkah.
 
-Menghapus index ini bisa kita lakukan dengan menjalankan command berikut ini. Sangat disarankan memulai dengan direktori yang bersih, jadi sebelum menjalankan command ini lakukan commit atau abaikan perubahan-perubahan, supaya aman.
+Dalam pandangan yang lebih luas, sistem juga menjadi bentuk keadilan. Ia melindungi orang yang bersungguh-sungguh agar tidak terus-menerus menutup kekurangan yang tidak pernah dibereskan. Ia mencegah yang rapi kelelahan, dan yang ceroboh terus dibiarkan.
 
-```bash
-git rm -r --cached .
-```
+Rasulullah ﷺ mengajarkan keteraturan dalam banyak aspek kehidupan: dari ibadah yang memiliki waktu, rukun, dan tata cara, hingga muamalah yang menuntut kejelasan dan amanah. Semua itu menunjukkan bahwa keteraturan bukan hal asing dalam ajaran Islam.
 
-Setelah dijalankan akan terlihat banyak baris (asumsi bahwa ini repository yang aktif) seperti berikut ini,
-```bash
-rm 'nama_folder/nama_file.php'
-rm 'nama_folder/nama_file_2.php'
-...
-```
+Bukan berarti semua harus kaku dan tanpa kelonggaran. Sistem yang baik justru memberi ruang bagi manusia untuk berbuat terbaik tanpa harus mengandalkan kepahlawanan setiap saat.
+
+Tanpa sistem, pekerjaan akan bergantung pada ingatan. Bergantung pada niat. Bergantung pada siapa yang paling kuat bertahan. Dan itu bukan cara yang adil.
+
+Maka ketika kita berkata "kita perlu sistem", yang dimaksud bukan sekadar prosedur atau aturan tertulis. Yang kita perlukan adalah cara kerja yang **jelas, bisa dipahami bersama, dan bisa dipertanggungjawabkan**.
+
+Karena pada akhirnya, sistem yang baik bukan hanya memudahkan pekerjaan, tetapi juga menjaga manusia di dalamnya.
