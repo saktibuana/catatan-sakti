@@ -1,34 +1,92 @@
 ---
-title: "Git: .gitignore"
-last_modified_at: 2023-06-23T16:20:02-05:00
+title: "Menginstal Laravel: Bukan Soal Langkah, Tapi Konteks"
+date: 2023-06-24
+last_modified_at: 2023-06-24
 categories:
-  - Blog
-  - Git
+  - Catatan
 tags:
-  - gitignore
-  - readability
-  - standard
+  - laravel
+  - instalasi
+  - pengembangan-aplikasi
+  - sistem
+  - praktik-kerja
 ---
 
-Laravel merupakan framework dari php dan bagi saya pribadi merupakan upgrade dari codeigniter.
+Tulisan tentang instalasi Laravel biasanya dimulai dengan daftar command.  
+`composer create-project`,  
+atur `.env`,  
+jalankan `php artisan serve`.
+
+Semua itu benar.  
+Dan semua itu mudah ditemukan.
+
+Masalahnya, pengalaman di lapangan jarang gagal karena langkah instalasi.  
+Ia gagal karena **konteks tidak pernah dibicarakan**.
+
 <!--more-->
-Hampir semua proyek yang kita telah buat ada file `.gitignore`. ini sebenarnya berisi nama-nama file yang akan diabaikan oleh proses-proses Git sehingga tidak akan terlacak oleh Git. Hanya saja, jika kita terlambat menyertakan file `.gitignore` ini atau mungkin kita ingin memperbarui file `.gitignore` agar bisa menghapus file tertentu dari repository, terkadang Git tidak langsung me-refleksikannya, Gimana dong? Kita harus menerapkan `.gitignore` itu lagi.
 
-Dalam artikel kali ini, akan ditunjukkan bagaimana caranya menerapkan `.gitignore` lagi dalam repository proyek kita - maka pastikan setiap perubahan diterapkan ya!
+Saya pernah melihat Laravel “gagal” dipakai bukan karena framework-nya,  
+tetapi karena lingkungan tempat ia dipasang tidak pernah disiapkan dengan sadar.
 
-## Menghapus semua file dari Git index
+Instalasi dianggap urusan teknis belaka.  
+Padahal ia adalah keputusan awal yang menentukan arah kerja.
 
-Git menyimpan masing-masing status dari file-file kita dalam sebuah index. Setiap file yang kita kecualikan dengan menuliskan file tersebut pada file `.gitignore`, tidak akan ditambahkan kedalam index tersebut. Namun bagaimana jika file tersebut sudah ada terlebih dulu dalam index? Agar bisa menerapkan aturan `.gitignore` maka kita harus menghapus dulu index tersebut lalu mengisinya lagi.
+Laravel datang dengan asumsi tertentu:  
+ada Composer, ada struktur direktori, ada dependensi yang dikelola, ada kebiasaan dokumentasi.  
+Semua itu masuk akal—jika lingkungannya siap.
 
-Menghapus index ini bisa kita lakukan dengan menjalankan command berikut ini. Sangat disarankan memulai dengan direktori yang bersih, jadi sebelum menjalankan command ini lakukan commit atau abaikan perubahan-perubahan, supaya aman.
+Masalah muncul ketika Laravel dipasang di lingkungan yang tidak mendukung asumsi itu.  
+Server seadanya.  
+Versi PHP tidak jelas.  
+Akses terbatas.  
+Atau tim yang belum terbiasa membaca dokumentasi.
 
-```bash
-git rm -r --cached .
-```
+Di situ, proses instalasi menjadi awal dari friksi, bukan kemudahan.
 
-Setelah dijalankan akan terlihat banyak baris (asumsi bahwa ini repository yang aktif) seperti berikut ini,
-```bash
-rm 'nama_folder/nama_file.php'
-rm 'nama_folder/nama_file_2.php'
-...
-```
+---
+
+Saya mulai melihat instalasi bukan sebagai “memulai proyek”,  
+tetapi sebagai **menyetujui seperangkat konsekuensi**.
+
+Menginstal Laravel berarti:
+- menerima struktur yang lebih ketat
+- menerima ketergantungan pada ekosistem
+- menerima kebutuhan belajar yang berkelanjutan
+
+Itu bukan hal buruk.  
+Justru sering kali itulah yang dibutuhkan.
+
+Namun, tidak semua proyek perlu itu sejak hari pertama.
+
+Ada proyek yang butuh cepat hidup.  
+Ada tim yang butuh kontrol penuh atas setiap baris kode.  
+Ada konteks di mana kesederhanaan lebih penting daripada kelengkapan.
+
+Dalam kondisi seperti itu, instalasi yang “berhasil” secara teknis  
+bisa menjadi kegagalan secara operasional.
+
+---
+
+Sekarang, sebelum memasang Laravel, saya tidak lagi bertanya *“bagaimana caranya”*.  
+Saya bertanya:
+
+- Siapa yang akan merawat aplikasi ini enam bulan lagi?
+- Seberapa sering sistem ini berubah?
+- Seberapa siap lingkungan dan timnya?
+- Apa risiko terbesar jika sesuatu rusak?
+
+Jika jawabannya selaras dengan asumsi Laravel,  
+instalasi biasanya berjalan mulus—bahkan membosankan.
+
+Dan justru di situlah tandanya benar.
+
+---
+
+Menginstal Laravel bukan tentang mengikuti langkah.  
+Ia tentang memahami konteks tempat langkah itu diambil.
+
+Ketika konteksnya tepat,  
+proses instalasi hanyalah menjadi todo-list.
+
+Dan ketika konteksnya keliru,  
+tidak ada command yang cukup untuk menyelamatkannya. Haha...
