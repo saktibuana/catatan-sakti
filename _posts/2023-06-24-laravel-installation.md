@@ -1,18 +1,18 @@
 ---
-title: "Menginstal Laravel: Bukan Soal Langkah, Tapi Konteks"
+title: "Proses Pemasangan Laravel: Bukan Cuma Soal Langkah"
 date: 2023-06-24
 last_modified_at: 2023-06-24
 categories:
   - Catatan
 tags:
   - laravel
-  - instalasi
+  - pemasangan/instalasi
   - pengembangan-aplikasi
   - sistem
   - praktik-kerja
 ---
 
-Tulisan tentang instalasi Laravel biasanya dimulai dengan daftar command.  
+Tulisan tentang pemasangan Laravel biasanya dimulai dengan daftar command.  
 `composer create-project`,  
 atur `.env`,  
 jalankan `php artisan serve`.
@@ -20,7 +20,7 @@ jalankan `php artisan serve`.
 Semua itu benar.  
 Dan semua itu mudah ditemukan.
 
-Masalahnya, pengalaman di lapangan jarang gagal karena langkah instalasi.  
+Masalahnya, pengalaman di lapangan jarang gagal karena langkah pemasangan.  
 Ia gagal karena **konteks tidak pernah dibicarakan**.
 
 <!--more-->
@@ -28,7 +28,7 @@ Ia gagal karena **konteks tidak pernah dibicarakan**.
 Saya pernah melihat Laravel “gagal” dipakai bukan karena framework-nya,  
 tetapi karena lingkungan tempat ia dipasang tidak pernah disiapkan dengan sadar.
 
-Instalasi dianggap urusan teknis belaka.  
+pemasangan dianggap urusan teknis belaka.  
 Padahal ia adalah keputusan awal yang menentukan arah kerja.
 
 Laravel datang dengan asumsi tertentu:  
@@ -41,11 +41,11 @@ Versi PHP tidak jelas.
 Akses terbatas.  
 Atau tim yang belum terbiasa membaca dokumentasi.
 
-Di situ, proses instalasi menjadi awal dari friksi, bukan kemudahan.
+Di situ, proses pemasangan menjadi awal dari friksi, bukan kemudahan.
 
 ---
 
-Saya mulai melihat instalasi bukan sebagai “memulai proyek”,  
+Saya mulai melihat pemasangan bukan sebagai “memulai proyek”,  
 tetapi sebagai **menyetujui seperangkat konsekuensi**.
 
 Menginstal Laravel berarti:
@@ -62,7 +62,7 @@ Ada proyek yang butuh cepat hidup.
 Ada tim yang butuh kontrol penuh atas setiap baris kode.  
 Ada konteks di mana kesederhanaan lebih penting daripada kelengkapan.
 
-Dalam kondisi seperti itu, instalasi yang “berhasil” secara teknis  
+Dalam kondisi seperti itu, pemasangan yang “berhasil” secara teknis  
 bisa menjadi kegagalan secara operasional.
 
 ---
@@ -76,7 +76,7 @@ Saya bertanya:
 - Apa risiko terbesar jika sesuatu rusak?
 
 Jika jawabannya selaras dengan asumsi Laravel,  
-instalasi biasanya berjalan mulus—bahkan membosankan.
+pemasangan biasanya berjalan mulus—bahkan membosankan.
 
 Dan justru di situlah tandanya benar.
 
@@ -86,7 +86,7 @@ Menginstal Laravel bukan tentang mengikuti langkah.
 Ia tentang memahami konteks tempat langkah itu diambil.
 
 Ketika konteksnya tepat,  
-proses instalasi hanyalah menjadi todo-list.
+proses pemasangan hanyalah menjadi todo-list.
 
 Dan ketika konteksnya keliru,  
 tidak ada command yang cukup untuk menyelamatkannya. Haha...
