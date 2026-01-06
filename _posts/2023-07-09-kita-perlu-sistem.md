@@ -1,6 +1,7 @@
 ---
 title: "Software Engineer: Kita Perlu Sistem"
-last_modified_at: 2023-7-09T08:20:02-05:00
+date: 2023-07-09
+last_modified_at: 2023-07-09T08:20:02-05:00
 categories:
   - Blog
   - Git
