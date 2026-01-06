@@ -4,14 +4,12 @@ date: 2023-07-09
 last_modified_at: 2023-07-09T08:20:02-05:00
 categories:
   - Blog
-  - Git
   - Catatan
 tags:
   - software enginner
   - produktifitas
   - sistem
   - kerja
-  - tanggung-jawab
 ---
 
 Para Software Engineer diharapkan untuk mengerjakan pekerjaan dengan super cepat dalam dunia development yang berkembang pesat ini.
